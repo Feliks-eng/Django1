@@ -14,4 +14,4 @@
 
    ```bash
    git clone https://github.com/Feliks-eng/Django1.git
-   cd project
+   cd Django1
