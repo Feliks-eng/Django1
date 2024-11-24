@@ -1,0 +1,83 @@
+/* Основной стиль для страницы */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Заголовок */
+h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Список товаров в корзине */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px;
+}
+
+ul li {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Стиль для каждого элемента корзины */
+ul li p {
+    margin: 0;
+    color: #555;
+    font-size: 16px;
+}
+
+/* Стиль для итоговой суммы */
+p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    text-align: right;
+    margin-right: 20px;
+}
+
+/* Ссылка "Назад" */
+a {
+    display: block;
+    width: 100px;
+    text-align: center;
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 20px auto;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: orangered;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    ul li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    a {
+        width: 80%;
+    }
+}
